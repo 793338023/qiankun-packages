@@ -51,6 +51,7 @@ registerMicroApps(
 // 设置默认进入的子应用
 setDefaultMountApp("/vue");
 
+// 关闭沙盒，由于加载antd的icon报错
 start({ sandbox: false });
 
 runAfterFirstMounted(() => {
