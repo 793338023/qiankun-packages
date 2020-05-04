@@ -7,14 +7,14 @@ qiankun 是一个基于 single-spa 的微前端实现库，旨在帮助大家能
 2. 主应用/main 包，主应用使用了 react 脚手架
 
 `npm install qiankun`
-主应用导入 qiankun 包，引入注册，开启等功能，详细参考[代码](.\main\src\index.js)
+主应用导入 qiankun 包，引入注册，开启等功能，详细参考[代码](https://github.com/793338023/qiankun-packages/blob/master/main/src/index.js)
 
 3. 子应用分别为 demo-one 与 demo-two，分别使用了 react 脚手架与 vue 脚手架
 
 对入口文件添加 bootstrap/mount/unmount 的生命周期函数，使用`window.__POWERED_BY_QIANKUN__`判断是否是 qiankun 微前端的子项目，对路由添加 react 的 basename 或 vue 的 base。
 
-[react 入口改造](.\demo-one\src\index.tsx)
-[vue 入口改造](.\demo-two\src\main.js)
+[react 入口改造](https://github.com/793338023/qiankun-packages/blob/master/demo-one/src/index.tsx)
+[vue 入口改造](https://github.com/793338023/qiankun-packages/blob/master/demo-two/src/main.js)
 
 基本上实现 qiankun 的微前端就那么几步，而剩下的就是通信问题、多个微前端同存或缓存的问题、沙盒隔离问题等等。
 
