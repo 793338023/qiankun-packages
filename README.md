@@ -14,6 +14,7 @@ qiankun 是一个基于 single-spa 的微前端实现库，旨在帮助大家能
 对入口文件添加 bootstrap/mount/unmount 的生命周期函数，使用`window.__POWERED_BY_QIANKUN__`判断是否是 qiankun 微前端的子项目，对路由添加 react 的 basename 或 vue 的 base。
 
 [react 入口改造](https://github.com/793338023/qiankun-packages/blob/master/demo-one/src/index.tsx)
+
 [vue 入口改造](https://github.com/793338023/qiankun-packages/blob/master/demo-two/src/main.js)
 
 基本上实现 qiankun 的微前端就那么几步，而剩下的就是通信问题、多个微前端同存或缓存的问题、沙盒隔离问题等等。
@@ -55,7 +56,8 @@ new webpack.HotModuleReplacementPlugin()
 qiankun 对 IE 的限制性也有一些，而且浏览器的兼容性也需要测试一下，如果需要引入 qiankun，当然也可以直接考虑使用 single-spa，当无法驾驭 qiankun 时。
 
 [qiankun 官网](https://qiankun.umijs.org/zh/api/#%E5%9F%BA%E4%BA%8E%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE)
-[qian issues](https://github.com/umijs/qiankun/issues)
+
+[qiankun issues](https://github.com/umijs/qiankun/issues)
 
 ## 总结
 
